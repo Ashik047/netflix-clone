@@ -86,6 +86,10 @@ body {
     aspect-ratio: 2/3;
 }
 
+.movies__each-movie:hover {
+    transform: scale(1.05);
+}
+
 .movies__num {
     left: -25px;
     color: var(--BG-COLOR);
@@ -122,10 +126,10 @@ body {
 .accordion-button:not(.collapsed)::before {
     content: "\58";
 
+    /* Created by Ashik Biju | Netflix Clone | 2025 */
+
     /* unicode of the icon from fontawesome */
 }
-
-/* Created by Ashik Biju | Netflix Clone | 2025 */
 
 /* footer styling */
 .footer__search {
