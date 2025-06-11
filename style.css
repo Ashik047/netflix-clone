@@ -1,0 +1,146 @@
+/* variables */
+:root {
+    /* color */
+    --BG-COLOR: black;
+
+    /* typography */
+    --FS: clamp(0.8rem, 0.7333rem + 0.3333vw, 1rem);
+}
+
+/* body container */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: var(--FS);
+    background-color: var(--BG-COLOR);
+}
+
+/* header background */
+.header--background {
+    background-color: transparent;
+}
+
+/* background image for header bacground */
+
+/* done like this so the filter doesn't affect the text */
+.header--background::before {
+    position: absolute;
+    z-index: -1;
+    background-image: url("./images/background.webp");
+    background-position: center;
+    background-size: cover;
+    content: '';
+    filter: brightness(30%);
+    inset: 0;
+}
+
+/* nav background */
+.intro .nav--background {
+    background-color: transparent;
+}
+
+/* red arc at the bottom of the header */
+.header__red-elipse {
+    top: 92vh;
+    z-index: -1;
+    height: 200px;
+    clip-path: ellipse(69% 100% at 50% 100%);
+}
+
+/* black elipse like background at the bottom of header */
+.header__black-elipse {
+    top: 92.5vh;
+    z-index: 0;
+    height: 200px;
+    background-color: var(--BG-COLOR);
+    box-shadow: inset 0 50px 10px -20px rgb(123 136 255 / 30%);
+    clip-path: ellipse(70% 100% at 50% 100%);
+}
+
+/* for horizontal scroll of movies */
+.movies__container {
+    gap: 2rem;
+    min-width: max-content;
+}
+
+/* scrollbar of movies */
+.movies__movie::-webkit-scrollbar-track {
+    background-color: var(--BG-COLOR);
+    border-radius: 10px;
+}
+
+.movies__movie::-webkit-scrollbar {
+    height: 10px;
+}
+
+.movies__movie::-webkit-scrollbar-thumb {
+    background-color: #1b1b1b;
+    border-radius: 10px;
+}
+
+/* movie cover page styling */
+.movies__each-movie {
+    width: clamp(100px, 66.6667px + 10.4167vw, 200px);
+    aspect-ratio: 2/3;
+}
+
+.movies__num {
+    left: -25px;
+    color: var(--BG-COLOR);
+    -webkit-text-stroke: 2px white;
+}
+
+/* reasons to join section */
+.reasons {
+    width: 99%;
+    height: 95%;
+    background-color: blueviolet;
+    background-image: linear-gradient(45deg, rgb(19 0 86), rgb(76 0 76));
+}
+
+/* FAQ section */
+
+/* menu icon behaviour styling */
+.accordion-button::after {
+    display: none;
+}
+
+.accordion-item .accordion-button::before {
+    /* unicode of the icon from fontawesome */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    content: "\2b";
+    font-family: 'Font Awesome 6 Free';
+
+}
+
+.accordion-button:not(.collapsed)::before {
+    content: "\58";
+
+    /* unicode of the icon from fontawesome */
+
+}
+
+/* Created by Ashik Biju | Netflix Clone | 2025 */
+/* footer styling */
+.footer__search {
+    width: 100%;
+}
+
+.footer__lang {
+
+    width: 140px;
+}
+
+/* media query for footer search */
+@media screen and (width >=768px) {
+
+    .footer__search {
+        width: 300px;
+    }
+
+}

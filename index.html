@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ashik Biju">
+    <meta name="description" content="Netflix India &hyphen; Watch TV Shows online, Watch Movies Online">
+    <title>Netflix India &hyphen; Watch TV Shows online, Watch Movies Online</title>
+    <!-- favicon -->
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <!-- linking bootstrap -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- linking css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- linking font awesome -->
+    <script src="https://kit.fontawesome.com/47b5fa122b.js" crossorigin="anonymous"></script>
+    <!-- linking google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- header with navbar -->
+    <header class="intro container-fluid header--background vh-100 position-relative">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand nav--background" aria-label="navigation">
+            <div class="container d-flex flex-column flex-sm-row">
+                <a class="navbar-brand" href="#">
+                    <img src="/images/Netflix_Logo_RGB.png" alt="Netflix logo" width="150" height="60">
+                </a>
+                <div class="navbar-nav d-flex justify-content-end">
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle border border-light bg-dark text-light rounded px-4 py-0"
+                            href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+                                class="fa-solid fa-language"></i><span class="d-none d-sm-inline"> English</span>
+                        </a>
+                        <!-- dropdown -->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Hindi</a></li>
+                            <li><a class="dropdown-item" href="#">Malayalam</a></li>
+                            <li><a class="dropdown-item" href="#">Tamil</a></li>
+                            <li><a class="dropdown-item" href="#">Telugu</a></li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-danger py-0 px-4 ms-2 text-nowrap" type="submit">Sign In</button>
+                </div>
+
+            </div>
+        </nav>
+        <!-- header content -->
+        <div class="container d-flex flex-column justify-content-center align-items-center text-light text-center h-75">
+            <h1 class="fw-bolder display-3 w-50">Unlimited movies, TV shows and more</h1>
+            <p class="fw-bold">Starts at ₹149. Cancel at any time.</p>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <form class="d-flex flex-column align-items-center flex-md-row w-50" role="search">
+                <input class="rounded p-1 m-2 w-100 bg-dark text-light" type="email" placeholder="Email address"
+                    aria-label="Search">
+                <button class="btn btn-danger text-nowrap" type="submit">Get Started &gt;</button>
+            </form>
+        </div>
+        <div class="header__red-elipse position-absolute w-100 start-0 bg-danger"></div>
+        <div class="header__black-elipse position-absolute w-100 start-0"></div>
+    </header>
+    <!-- main -->
+    <main class="movies container text-light mt-5 position-relative">
+        <section>
+            <h2 class="text-light mb-3">Trending Now</h2>
+            <div class="movies__movie overflow-x-auto w-100">
+                <div class="movies__container d-flex flex-nowrap pb-3 px-4">
+                    <div class="movies__each-movie position-relative">
+                        <img src="images/movies/one.jpg" alt="movie-1" class="w-100 h-100 rounded object-fit-cover">
+                        <h3 class="display-1 fw-bolder movies__num position-absolute bottom-0">1</h3>
+                    </div>
+                    <div class="movies__each-movie position-relative">
+                        <img src="images/movies/two.jpg" alt="movie-1" class="w-100 h-100 rounded object-fit-cover">
+                        <h3 class="display-1 fw-bolder movies__num position-absolute bottom-0">2</h3>
+                    </div>
+                    <div class="movies__each-movie position-relative">
+                        <img src="images/movies/three.jpeg" alt="movie-1" class="w-100 h-100 rounded object-fit-cover">
+                        <h3 class="display-1 fw-bolder movies__num position-absolute bottom-0">3</h3>
+                    </div>
+                    <div class="movies__each-movie position-relative">
+                        <img src="images/movies/four.jpg" alt="movie-1" class="w-100 h-100 rounded object-fit-cover">
+                        <h3 class="display-1 fw-bolder movies__num position-absolute bottom-0">4</h3>
+                    </div>
+                    <div class="movies__each-movie position-relative">
+                        <img src="images/movies/five.jpg" alt="movie-1" class="w-100 h-100 rounded object-fit-cover">
+                        <h3 class="display-1 fw-bolder movies__num position-absolute bottom-0">5</h3>
+                    </div>
+                    <div class="movies__each-movie position-relative">
+                        <img src="images/movies/six.webp" alt="movie-1" class="w-100 h-100 rounded object-fit-cover">
+                        <h3 class="display-1 fw-bolder movies__num position-absolute bottom-0">6</h3>
+                    </div>
+                    <div class="movies__each-movie position-relative">
+                        <img src="images/movies/seven.jpg" alt="movie-1" class="w-100 h-100 rounded object-fit-cover">
+                        <h3 class="display-1 fw-bolder movies__num position-absolute bottom-0">7</h3>
+                    </div>
+                    <div class="movies__each-movie position-relative">
+                        <img src="images/movies/eight.jpg" alt="movie-1" class="w-100 h-100 rounded object-fit-cover">
+                        <h3 class="display-1 fw-bolder movies__num position-absolute bottom-0">8</h3>
+                    </div>
+                    <div class="movies__each-movie position-relative">
+                        <img src="images/movies/nine.png" alt="movie-1" class="w-100 h-100 rounded object-fit-cover">
+                        <h3 class="display-1 fw-bolder movies__num position-absolute bottom-0">9</h3>
+                    </div>
+                    <div class="movies__each-movie position-relative">
+                        <img src="images/movies/ten.jpg" alt="movie-1" class="w-100 h-100 rounded object-fit-cover">
+                        <h3 class="display-1 fw-bolder movies__num position-absolute bottom-0">10</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="text-light mt-5 mb-3">More reasons to join</h2>
+            <div class="row">
+                <div class="col-xl-3 col-lg-6 reasons__container">
+                    <div class="reasons position-relative pb-5 pt-3 rounded">
+                        <h3 class="text-light px-2">Enjoy on your TV</h3>
+                        <p class="text-light px-2">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+                            players and more.</p>
+                        <i class="fa-solid fa-tv position-absolute bottom-0 end-0 p-3 fs-3" style="color: #B197FC;"></i>
+                    </div>
+                    <!-- Created by Ashik Biju | Netflix Clone | 2025 -->
+                </div>
+                <div class="col-xl-3 col-lg-6 reasons__container">
+                    <div class="reasons position-relative pb-5 pt-3 rounded">
+                        <h3 class="text-light px-2">Download your shows to watch offline</h3>
+                        <p class="text-light px-2">Save your favourites easily and always have something to watch.</p>
+                        <i class="fa-solid fa-circle-down position-absolute bottom-0 end-0 p-3 fs-3"
+                            style="color: #B197FC;"></i>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 reasons__container">
+                    <div class="reasons position-relative pb-5 pt-3 rounded">
+                        <h3 class="text-light px-2">Watch everywhere</h3>
+                        <p class="text-light px-2">Stream unlimited movies and TV shows on your phone, tablet, laptop
+                            and TV.</p>
+                        <i class="fa-solid fa-house position-absolute bottom-0 end-0 p-3 fs-3"
+                            style="color: #B197FC;"></i>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 reasons__container">
+                    <div class="reasons position-relative pb-5 pt-3 rounded">
+                        <h3 class="text-light px-2">Create profiles for kids</h3>
+                        <p class="text-light px-2">Send kids on adventures with their favourite characters in a space
+                            made just for them — free with your membership.</p>
+                        <i class="fa-solid fa-face-smile position-absolute bottom-0 end-0 p-3 fs-3"
+                            style="color: #B197FC;"></i>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <h2 class="text-light mt-5 mb-3">Frequently Asked Questions</h2>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item bg-dark text-light mb-2 border-0">
+                    <button class="accordion-button collapsed bg-dark text-light" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" aria-expanded="false"
+                        aria-controls="flush-collapseOne1">
+                        What is Netflix?
+                    </button>
+                    <div id="flush-collapseOne1" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p class="px-3 pt-3">Netflix is a streaming service that offers a wide variety of
+                                award-winning TV
+                                shows, movies,
+                                anime, documentaries and more &hyphen; on thousands of internet-connected devices.
+                            </p>
+                            <p class="px-3 pt-2">You can watch as much as you want, whenever you want, without a single
+                                ad
+                                &hyphen; all for one
+                                low monthly price. There's always something new to discover, and new TV shows and movies
+                                are
+                                added every week!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item bg-dark text-light mb-2 border-0">
+                    <button class="accordion-button collapsed bg-dark text-light" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne2" aria-expanded="false"
+                        aria-controls="flush-collapseOne2">
+                        How much does Netflix cost?
+                    </button>
+                    <div id="flush-collapseOne2" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p class="px-3 pt-3">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
+                                streaming
+                                device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra
+                                costs, no
+                                contracts.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item bg-dark text-light mb-2 border-0">
+                    <button class="accordion-button collapsed bg-dark text-light" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne3" aria-expanded="false"
+                        aria-controls="flush-collapseOne3">
+                        Where can I watch?
+                    </button>
+                    <div id="flush-collapseOne3" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p class="px-3 pt-3">Watch anywhere, anytime. Sign in with your Netflix account to watch
+                                instantly
+                                on the web at netflix.com from your personal computer or on any internet-connected
+                                device that
+                                offers the Netflix app, including smart TVs, smartphones, tablets, streaming media
+                                players and
+                                game consoles.
+                            </p>
+                            <p class="px-3 pt-2">You can also download your favourite shows with the iOS or Android app.
+                                Use
+                                downloads to watch while you're on the go and without an internet connection. Take
+                                Netflix with
+                                you anywhere.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item bg-dark text-light mb-2 border-0">
+                    <button class="accordion-button collapsed bg-dark text-light" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne4" aria-expanded="false"
+                        aria-controls="flush-collapseOne4">
+                        How do I cancel?
+                    </button>
+                    <div id="flush-collapseOne4" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p class="px-3 pt-3">Netflix is flexible. There are no annoying contracts and no
+                                commitments. You
+                                can easily cancel your account online in two clicks. There are no cancellation fees
+                                &hyphen;
+                                start or stop your account anytime.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item bg-dark text-light mb-2 border-0">
+                    <button class="accordion-button collapsed bg-dark text-light" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne5" aria-expanded="false"
+                        aria-controls="flush-collapseOne5">
+                        What can I watch on Netflix?
+                    </button>
+                    <div id="flush-collapseOne5" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p class="px-3 pt-3">Netflix has an extensive library of feature films, documentaries, TV
+                                shows,
+                                anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you
+                                want.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer container text-light mt-5 mb-5">
+        <p class="text-center">Ready to watch? Enter your email to create or restart your membership.</p>
+        <div class="w-100">
+
+            <form class="col-md-4 d-flex w-100 justify-content-center flex-column align-items-start flex-sm-row"
+                role="search">
+                <input class="rounded p-1  m-2 mt-0 ms-0 bg-dark text-light footer__search" type="email"
+                    placeholder="Email address" aria-label="Search">
+                <button class="btn btn-danger btn text-nowrap" type="submit">Get Started &gt;</button>
+            </form>
+        </div>
+        <p class="my-5">Questions? Call <a class="text-light" href="tel:000-000-000-0000">000-000-000-0000</a></p>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-2"><a class="text-light" href="">FAQ</a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-2"><a class="text-light" href="">Help Centre</a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-2"><a class="text-light" href="">Account</a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-2"><a class="text-light" href="">Media Centre</a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-2"><a class="text-light" href="">Investor Relations</a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-2"><a class="text-light" href="">Jobs</a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-2"><a class="text-light" href="">Ways to Watch</a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-2"><a class="text-light" href="">Terms of Use</a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-2"><a class="text-light" href="">Privacy</a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-2"><a class="text-light" href="">Cookie Preferences</a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-2"><a class="text-light" href="">Contact Us</a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-2"><a class="text-light" href="">Speed Test</a></div>
+        </div>
+        <div class="nav-item dropdown mt-5 footer__lang">
+            <a class="nav-link dropdown-toggle border border-light bg-dark text-light rounded px-4 py-0" href="#"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-language"></i>
+                English
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Hindi</a></li>
+                <li><a class="dropdown-item" href="#">Malayalam</a></li>
+                <li><a class="dropdown-item" href="#">Tamil</a></li>
+                <li><a class="dropdown-item" href="#">Telugu</a></li>
+            </ul>
+        </div>
+        <p class="mt-5">Netflix India</p>
+        <p class="my-5">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="">Learn
+                more.</a></p>
+    </footer>
+    <!-- linking bootstrap -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
