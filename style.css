@@ -23,6 +23,9 @@ body {
 }
 
 /* background image for header bacground */
+.intro {
+    min-width: max-content;
+}
 
 /* done like this so the filter doesn't affect the text */
 .header--background::before {
@@ -43,7 +46,7 @@ body {
 
 /* red arc at the bottom of the header */
 .header__red-elipse {
-    top: 92vh;
+    top: 92%;
     z-index: -1;
     height: 200px;
     clip-path: ellipse(69% 100% at 50% 100%);
@@ -51,7 +54,7 @@ body {
 
 /* black elipse like background at the bottom of header */
 .header__black-elipse {
-    top: 92.5vh;
+    top: 92.5%;
     z-index: 0;
     height: 200px;
     background-color: var(--BG-COLOR);
@@ -114,6 +117,7 @@ body {
     right: 10px;
     font-size: 1.5rem;
     content: "\2b";
+    /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
     font-family: 'Font Awesome 6 Free';
 
 }
@@ -126,13 +130,13 @@ body {
 }
 
 /* Created by Ashik Biju | Netflix Clone | 2025 */
+
 /* footer styling */
 .footer__search {
     width: 100%;
 }
 
 .footer__lang {
-
     width: 140px;
 }
 
