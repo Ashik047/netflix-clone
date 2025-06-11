@@ -23,9 +23,6 @@ body {
 }
 
 /* background image for header bacground */
-.intro {
-    min-width: max-content;
-}
 
 /* done like this so the filter doesn't affect the text */
 .header--background::before {
@@ -126,7 +123,6 @@ body {
     content: "\58";
 
     /* unicode of the icon from fontawesome */
-
 }
 
 /* Created by Ashik Biju | Netflix Clone | 2025 */
